@@ -1,0 +1,11 @@
+body{
+    margin:0
+}
+
+div{
+    border: solid black 1px;
+}
+
+#profile>div>div{
+    height: 500px;
+}
