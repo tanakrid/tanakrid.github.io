@@ -1,11 +1,147 @@
 body{
-    margin:0
+    margin: 0;
+    padding: 0;
+    background-image: url('../image/architecture-buildings-busy-424184.jpg');
+    background-position: top; 
+    background-repeat: no-repeat; 
+    background-size: 100% auto;
+    background-attachment: fixed;
+    font-family: 'Noto Serif', serif;
+    overflow-x: hidden;
 }
 
-div{
-    border: solid black 1px;
+#education, #activity, #profile-detail, #activity, #skill{
+    padding: 5vh 15vw;
+    margin: 0;
 }
 
-#profile>div>div{
-    height: 500px;
+#profile {
+    width: 99vw;
+    height: 100vh;
+    margin: 0;
+    background-color: rgba(8, 8, 8, 0.79);
 }
+
+#profile>div{
+    position: absolute;
+    top: 32vh;
+    width: 100vw;
+    color: white;
+    text-align: center;
+}
+
+#profile>div>h1{
+    font-size: 5.5rem;
+    font-weight: bold;
+}
+.button-first{
+    margin-top: 5vh;
+    color: white;
+    border: 3px #df0054 solid;
+    width: 20vw;
+    height: 10vh;
+    border-radius: 0;
+    background: none;
+    transition: 0.3s;
+}
+.button-first:hover{
+    background-color: #df0054;
+    color: white
+}
+
+#profile-detail{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+#profile-detail>div{
+    width: 50%;
+    padding: 2%;
+    margin: 2%;
+}
+
+#myImage{
+    background-image: url('../image/crazy_me.jpg');
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    border-radius: 50%;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+#education{
+    background-color: white;
+}
+
+#activity{
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    background-color: #75787b;
+    color: white;
+}
+#activity>div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.event-box{
+    width: 30%;
+    border-radius: 1%;
+    background-color: #dfe6e9;
+    color: black;
+    margin: 10px;
+    transition: 0.3s;
+}
+.event-box>div{
+    padding: 20px 10px 10px 20px;
+}
+.event-image{
+    width: 100%;
+    height: 30vh;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+.event-box:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#skill{
+    background-color: #636e72;
+    color: #dfe6e9;
+}
+
+#skill>div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+i{
+    font-size: 5rem;
+    margin: 30px 50px;
+}
+
+#contact{
+    background-color: #2d3436;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+}
+
+#contact>a>i{
+    font-size: 2rem;
+    transition: 0.3s;
+}
+
+
+
+
+
+
