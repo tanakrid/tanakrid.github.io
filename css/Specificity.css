@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Noto Serif', serif;
+
+}
+
+.font-kanit{
+    font-family: 'Kanit', sans-serif;
+}
+.font-niramit{
+    font-family: 'Niramit', sans-serif;
+}
+
+.perfect-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.padding-side{
+    padding: 40px 15px;
+}
+.sub-title{
+    font-size: 3.5rem;
+    margin-bottom: 50px;
+}
+.sub-content{
+    font-size: 1.2rem;
+}
+
+.come-home{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: none;
+    border: aqua solid 5px;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    position: fixed;
+    left: 85%;
+    top: 70%;
+    transition: 0.3s;
+}
+.come-home:hover{
+    background-color: aqua;
+    color: black;
+    font-weight: bold;
+}
+.full-viewpoint{
+    width: 100vw;
+    height: 100vh;
+    font-weight: bold;
+}
+
+.header{
+    background-color: #d63031;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.header-text{
+    font-size: 5rem;
+}
+
+.content-what{
+    background-color: #74b9ff;
+}
+
+.content-how{
+    background-color: #ff7675;
+    color: white;
+}
+.content-how>div{
+    width: 80vw;
+}
+
+.btn{
+    width: 50vw;
+    height: 12vh;
+    font-size: 1.3rem;
+    margin: auto;
+}

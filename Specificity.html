@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/Specificity.css">
+    <title>CSS Specificity</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Blinker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Blinker|Noto+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kanit|Niramit&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/45bebac82d.js"></script>
+</head>
+<body>
+    <a href="index.html"><div class="come-home perfect-center"><p class="perfect-text-center">Home</p></div></a>
+    
+    <div class="full-viewpoint header perfect-center padding-side">
+        <h1 class="header-text">CSS Specificity</h1>
+    </div>
+    <div class="perfect-center padding-side content-what full-viewpoint">
+        <div>
+            <h4 class="font-kanit sub-title">Specificity คืออะไร</h4>
+            <p class="font-niramit sub-content">เป็นหลักการที่ใช้ในการควบคุมการทำงานของ CSS โดยขึ้นกับ selector ที่ถูกนำมาใช้กำกับให้เกิดคุณสมบัติต่อ element ต่างๆ</p>
+        </div>
+    </div>
+    <div class="perfect-center padding-side content-how full-viewpoint">
+        <div>
+            <h4 class="font-kanit sub-title">Specificity มีหลักการอย่างไร</h4>
+            <p class="font-niramit sub-content">selector แต่ละชนิดจะมีค่าที่แสดงถึงลำดับความสำคัญอยู่ในลักษณะเชิงปริมาณ กล่าวคือค่าเหล่านี้สามารถรวมกันได้ และเมื่อผลรวมสุดท้ายในกรณีที่มี selector ที่ชี้ถึง element เดียวกันฝั่งไหนมากกว่าจะได้รับการแสดงผลไป</p>
+            <button type="button" class="btn btn-outline-secondary font-kanit" data-toggle="modal" data-target="#exampleModalScrollable">ตาราง</button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalScrollableTitle">ตารางค่าลำดับความสำคัญจากการประมาณของ selector</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <table>
+    <tr>
+        <th>ชนิดของ selector</th>
+        <th>ค่าที่ประมาณให้</th>
+    </tr>
+    <tr>
+        <td>Inline Style</td>
+        <td>1000 (มากที่สุด)</td>
+    </tr>
+    <tr>
+        <td>ID</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <td>Class</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td>Element</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>Chain Selector</td>
+        <td>ผลรวมทั้งหมดของ selector</td>
+    </tr>
+    <tr>
+        <td>!important</td>
+        <td>บังคับใช้ไม่ขึ้นกับการเปรียบเทียบ</td>
+    </tr>
+    </table>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
